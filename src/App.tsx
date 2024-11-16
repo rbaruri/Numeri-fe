@@ -29,7 +29,7 @@ function App() {
       formData.append("image", dataURLtoFile(imageData, "canvas_image.png"));
 
       // Send the screenshot image to the backend
-      const response = await fetch("http://127.0.0.1:5000/process-image", {
+      const response = await fetch("https://numeri-be.onrender.com/process-image", {
         method: "POST",
         body: formData,
       });
